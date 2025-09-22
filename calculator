@@ -1,49 +1,67 @@
-a = int(input("введите 1 число:"));
-b = int(input("Введите операцию:"));
-c = int(input("Введите 2 число:"));
-if b == "+":
-    print(a + c);
-elif b == "-":
-    print(a - c);
-elif b == "*":
-    print(a * c);
-elif b == "/":
-    print(a / c);
-elif b == "**":
-    print(a ** c);
-elif b == "//":
-    print(a // c);
-elif b == "%":
-    print(a % c);
-elif b == "==":
-    if a == c:
-      print(True);
+print("какую операцию вы хотите выполнить?");
+print("1) арифмитическую/сравнительную");
+print("2) логическую");
+k = int(input());
+if k == 1:
+    a = int(input("введите 1 число:"));
+    b = int(input("Введите операцию:"));
+    c = int(input("Введите 2 число:"));
+    if b == "+":
+        print(a + c);
+    elif b == "-":
+        print(a - c);
+    elif b == "*":
+        print(a * c);
+    elif b == "/":
+        print(a / c);
+    elif b == "**":
+        print(a ** c);
+    elif b == "//":
+        print(a // c);
+    elif b == "%":
+        print(a % c);
+    elif b == "==":
+        if a == c:
+          print("True");
+        else:
+          print("False");
+    elif b == "!=":
+        if a != c:
+          print("True");
+        else:
+          print("False");
+    elif b == ">":
+        if a > c:
+          print("True");
+        else:
+          print("False");
+    elif b == "<":
+        if a < c:
+          print("True");
+        else:
+          print("False");
+    elif b == ">=":
+        if a >= c:
+          print("True");
+        else:
+          print("False");
+    elif b == "<=":
+        if a <= c:
+          print("True");
+        else:
+          print("False");
     else:
-      print(False);
-elif b == "!=":
-    if a != c:
-      print(True);
+      print("ошибка ввода")
+if k == 2:
+    x = True
+    y = False
+    !x = False
+    !y = True
+    print("x = true, !x = False, y = True, !y = True");
+    z = input("Введите логическую выражение:");
+    if z == "x and x" or z == "x and !y" or z == "x or y" or z == "x or !y" or z == "!x or !y" or z == "x or x" or z == "!y or !y":
+        print("True")
     else:
-      print(False);
-elif b == ">":
-    if a > c:
-      print(True);
-    else:
-      print(False);
-elif b == "<":
-    if a < c:
-      print(True);
-    else:
-      print(False);
-elif b == ">=":
-    if a >= c:
-      print(True);
-    else:
-      print(False);
-elif b == "<=":
-    if a <= c:
-      print(True);
-    else:
-      print(False);
+        print("False")
 else:
-  print("ошибка ввода")
+    print("Ошибка ввода")
