@@ -1,0 +1,49 @@
+a = int(input("введите 1 число:"));
+b = int(input("Введите операцию:"));
+c = int(input("Введите 2 число:"));
+if b == "+":
+    print(a + c);
+elif b == "-":
+    print(a - c);
+elif b == "*":
+    print(a * c);
+elif b == "/":
+    print(a / c);
+elif b == "**":
+    print(a ** c);
+elif b == "//":
+    print(a // c);
+elif b == "%":
+    print(a % c);
+elif b == "==":
+    if a == c:
+      print(True);
+    else:
+      print(False);
+elif b == "!=":
+    if a != c:
+      print(True);
+    else:
+      print(False);
+elif b == ">":
+    if a > c:
+      print(True);
+    else:
+      print(False);
+elif b == "<":
+    if a < c:
+      print(True);
+    else:
+      print(False);
+elif b == ">=":
+    if a >= c:
+      print(True);
+    else:
+      print(False);
+elif b == "<=":
+    if a <= c:
+      print(True);
+    else:
+      print(False);
+else:
+  print("ошибка ввода")
